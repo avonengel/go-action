@@ -12,6 +12,8 @@ description: 'Greet someone'
 runs:
   using: "composite"
   steps:
+    - run: ls -lah
+      shell: bash
     - run: go run main.go
       shell: bash
 
